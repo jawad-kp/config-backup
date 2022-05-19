@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  postgres:
+    container_name: "postgres_docker"
+    image: "postgres:14"
+    ports:
+      - "6000:5432"
+    environment:
+      POSTGRES_PASSWORD: "verysecurepassword"
+      POSTGRES_DB: "test_indexer"
+      POSTGRES_USER: "jawad_docker"
+      PG_DATA: "/Users/jawad-unmarshal/Documents/docker_postgres_data/"
+networks:
+  dev:
+    external: true
