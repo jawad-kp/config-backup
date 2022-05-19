@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /Users/jawad-unmarshal/Documents/docker_postgres_data
+docker-compose up
